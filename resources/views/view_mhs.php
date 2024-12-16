@@ -102,9 +102,9 @@ th:first-child {
       <th width="5%">ID</th>
 			<th width="20%">Nama</th>
 			<th width="10%">Nim</th>
-      <th widt="20%">Link Gambar</th>
-            <th width="20%">Kelas</th>
-            <th width="20%">Prodi</th>
+      <th width="10%">Kelas</th>
+      <th width="10%">Prodi</th>
+      <th width="20%">Foto Mhs</th>
 	
 		</tr>
 	</thead>
@@ -128,9 +128,10 @@ async function fetchData(searchTerm = '') {
 			tr.innerHTML = `
 				<td align="center">${mhs.id}</td>
 				<td align="center">${mhs.nama}</td>
-                <td align="center">${mhs.nim}</td>
+        <td align="center">${mhs.nim}</td>
 				<td align="center">${mhs.kelas}</td>
-                <td align="center">${mhs.prodi}</td>
+        <td align="center">${mhs.prodi}</td>
+        <td align="center">${mhs.fotomhs}</td>
 	
 			`;
 			tableBody.appendChild(tr);
